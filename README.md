@@ -13,5 +13,5 @@ From https://developer.chrome.com/docs/extensions/mv3/getstarted/tut-tabs-manage
     - https://developer.chrome.com/docs/extensions/mv3/manifest/
     - https://developer.chrome.com/docs/webstore/publish/
     - https://developer.chrome.com/docs/extensions/mv3/
-- Click on the popup
+- Click on the popup (it should list tha tabs opened)
 - Click on the "Group tabs"
