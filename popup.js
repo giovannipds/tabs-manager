@@ -16,8 +16,8 @@ for (const tab of tabs) {
   const title = tab.title.split("-")[0].trim();
   const pathname = new URL(tab.url).pathname.slice("/docs".length);
 
-  element.querySelector(".title").textContet = title;
-  element.querySelector(".pathname").textContet = pathname;
+  element.querySelector(".title").textContent = title;
+  element.querySelector(".pathname").textContent = pathname;
   element.querySelector("a").addEventListener("click", async () => {
     // need to focus window as well as the active tab
     await chrome.tabs.update(tab.id, { active: true });
