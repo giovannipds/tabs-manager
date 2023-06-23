@@ -11,7 +11,7 @@ tabs.sort((a, b) => collator.compare(a.title, b.title));
 const template = document.getElementById("li_template");
 const elements = new Set();
 for (const tab of tabs) {
-  const element = template.content.firstElementChild.clodeNode(true);
+  const element = template.content.firstElementChild.cloneNode(true);
 
   const title = tab.title.split("-")[0].trim();
   const pathname = new URL(tab.url).pathname.slice("/docs".length);
