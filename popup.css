@@ -38,8 +38,10 @@ li {
 li:nth-child(odd) {
   background: #80808030;
 }
-li:nth-child(even) {
-  background: #ffffff;
+@media (prefers-color-scheme: light) {
+  li:nth-child(even) {
+    background: #ffffff;
+  }
 }
 
 h3,
