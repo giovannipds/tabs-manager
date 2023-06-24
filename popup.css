@@ -25,6 +25,9 @@ button {
   font-weight: bold;
   padding: 7.5px 15px;
 }
+button + button {
+  margin-left: 10px;
+}
 
 ul {
   list-style-type: none;
