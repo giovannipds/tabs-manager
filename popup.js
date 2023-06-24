@@ -34,9 +34,11 @@ for (const tab of tabs) {
 }
 document.querySelector("ul").append(...elements);
 
-const button = document.querySelector("button");
-button.addEventListener("click", async () => {
-  const byId = ({ id }) => id;
+const byId = ({ id }) => id;
+
+const groupBtn = document.getElementById("groupTabs");
+
+groupBtn.addEventListener("click", async () => {
   const chromeTabIds = tabs
     .filter((tab) => tab.url.includes('chrome'))
     .map(byId);
@@ -50,5 +52,14 @@ button.addEventListener("click", async () => {
   if (tablelessTabIds.length) {
     const group2 = await chrome.tabs.group({ tabIds: tablelessTabIds });
     await chrome.tabGroups.update(group2, { color: "red", title: "TABLELESS ROCKS" });
+  }
+})
+
+const ungroupBtn = document.getElementById("ungroupTabs");
+
+ungroupBtn.addEventListener("click", async () => {
+  const tabIds = tabs.map(byId);
+  if (tabIds.length) {
+    await chrome.tabs.ungroup(tabIds);
   }
 })
