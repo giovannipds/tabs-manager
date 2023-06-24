@@ -1,5 +1,29 @@
 body {
+  cursor: default;
+  font-family: sans-serif;
+  margin: 20px;
   width: 20rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #343434;
+    color: #fff;
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+button {
+  background-color: #bea5ff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 1px 2px 4px #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 7.5px 15px;
 }
 
 ul {
