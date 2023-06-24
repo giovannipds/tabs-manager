@@ -32,5 +32,5 @@ const button = document.querySelector("button");
 button.addEventListener("click", async () => {
   const tabIds = tabs.map(({ id }) => id);
   const group = await chrome.tabs.group({ tabIds });
-  await chrome.tabGroups.update(group, { title: "EXTENSION DOCS" });
+  await chrome.tabGroups.update(group, { color: "pink", title: "EXTENSION DOCS" });
 })
