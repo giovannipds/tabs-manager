@@ -15,3 +15,9 @@ From https://developer.chrome.com/docs/extensions/mv3/getstarted/tut-tabs-manage
     - https://developer.chrome.com/docs/extensions/mv3/
 - Click on the popup (it should list tha tabs opened)
 - Click on the "Group tabs"
+
+### Enhanced features
+
+I addeed the potential features suggested, so now the extension also groups links from [Tableless](https://tableless.com.br/), dividing into two tab groups and having an ungroup button.
+
+:)
