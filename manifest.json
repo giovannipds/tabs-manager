@@ -12,7 +12,8 @@
     "default_popup": "popup.html"
   },
   "host_permissions": [
-    "https://developer.chrome.com/*"
+    "https://developer.chrome.com/*",
+    "https://tableless.com.br/*"
   ],
   "permissions": [
     "tabGroups"
